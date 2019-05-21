@@ -29,25 +29,25 @@ const services = [{
     feedback.innerHTML = '';
 
      if  (billAmount === "" || billAmount <="0"){
-        feedback.classList.add('showItem');
+        feedback.classList.add('showItem', 'alert-danger');
         feedback.innerHTML += `<p>Bill amount cannot be blank</p>`
         isFeedback = true;
     }
     
     if (numUsers <= "0"){
-      feedback.classList.add('showItem');
+      feedback.classList.add('showItem', 'alert-danger');
       feedback.innerHTML += `<p>Number of users must be greater than zero</p>`;
        isFeedback = true;
     } 
     
    if (selectedService === "0"){
-     feedback.classList.add('showItem');
+     feedback.classList.add('showItem', 'alert-danger');
      feedback.innerHTML += `<p>You must select a Service</p>`
       isFeedback = true;
    }
     
     setTimeout(function(){
-      feedback.classList.remove('showItem');
+      feedback.classList.remove('showItem', 'alert-danger');
     }, 10000);
     
     return isFeedback;
