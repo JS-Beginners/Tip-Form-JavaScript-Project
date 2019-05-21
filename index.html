@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="css/all.css">
+ <title>Background Image Project</title>
+ <style>
+ </style>
+</head>
+
+<body>
+
+ <div class="container">
+  <div class="row max-height align-items-center">
+   <div class="col-10 mx-auto col-md-8">
+    <div class="card">
+     <div class="card-title p-2">
+      <h3 class="text-uppercase text-center">tip calculator</h3>
+     </div>
+     <div class="card-body">
+      <!-- end of  card title -->
+      <div class="feedback text-center alert  text-capitalize p-1">
+       your feedback
+      </div>
+      <form id='tip-form'>
+       <!-- single input -->
+       <div class="my-4">
+        <h5 class="text-capitalize mb-2">how much was your bill ?</h5>
+        <div class="input-group">
+         <div class="input-group-prepend">
+          <span class="input-group-text bill-icon"><i class="fas fa-dollar-sign fa-fw"></i></span>
+         </div>
+         <input type="number" class="form-control form-control-lg" id="input-bill">
+        </div>
+       </div>
+       <!-- end of single input -->
+       <!-- single input -->
+       <div class="my-4">
+        <h5 class="text-capitalize mb-2">how many people sharing the bill ?</h5>
+        <div class="input-group">
+         <div class="input-group-prepend">
+          <span class="input-group-text user-icon"><i class="fas fa-user fa-fw"></i></span>
+         </div>
+         <input type="number" class="form-control form-control-lg" id="input-users">
+        </div>
+       </div>
+       <!-- end of single input -->
+       <!-- single input -->
+       <div class="my-4">
+
+        <h5 class="text-capitalize mb-2">how was your service</h5>
+        <div class="form-group">
+
+         <select class="form-control form-control-lg text-capitalize" id="input-service">
+          <option selected value="0">Choose...</option>
+
+         </select>
+        </div>
+
+       </div>
+       <!-- end of single input -->
+
+       <input type="submit" class="d-block mx-auto text-capitalize btn submitBtn w-75" value="calculate">
+      </form>
+      <div class="loader text-center">
+       <img src="img/Facebook-1s-200px.gif" alt="">
+      </div>
+      <!-- results -->
+      <div class="results text-center my-3">
+       <h3 class="text-capitalize">tip amount<span> $ </span><span id="tip-amount"></span></h3>
+       <h3 class="text-capitalize">total amount<span> $ </span><span id="total-amount"></span></h3>
+       <h3 class="text-capitalize">each person owns<span> $ </span><span id="person-amount"></span></h3>
+      </div>
+     </div>
+     <!--  -->
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+
+
+
+
+ <!-- jquery -->
+ <script src="./js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="./js/app.js"></script>
+</body>
+
+</html>

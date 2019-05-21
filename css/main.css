@@ -1,0 +1,54 @@
+.max-height {
+  min-height: 100vh;
+}
+:root {
+  --lightBlue: #86bbd8;
+  --darkBlue: #336699;
+  --mainWhite: #f5f5f5;
+  --mainDark: #333333;
+}
+
+body {
+  background: var(--lightBlue);
+}
+.card-title {
+  background: var(--darkBlue);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  color: var(--mainWhite);
+}
+.card {
+  border: none !important;
+  border-radius: 0.5rem !important;
+}
+
+.bill-icon,
+.user-icon {
+  background: var(--darkBlue) !important;
+  color: var(--mainWhite);
+}
+.submitBtn {
+  background: var(--darkBlue);
+  font-size: 1.2rem;
+  color: var(--mainWhite);
+}
+
+.submitBtn:hover {
+  background: var(--lightBlue);
+  color: var(--mainDark);
+}
+/* feedback */
+.feedback {
+  display: none;
+}
+.loader {
+  display: none;
+}
+
+.results {
+  display: none;
+}
+
+.showItem {
+  display: block;
+}
