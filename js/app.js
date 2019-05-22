@@ -133,7 +133,7 @@ services.forEach(function(service){
         inputUsers.value = '';
         serviceValue.value = 0;
         resultsDOM.classList.remove('showItem');
-      }, 5000)
+      }, 10000)
 
 
     } //end isFeedback statement
